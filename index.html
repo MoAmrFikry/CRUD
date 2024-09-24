@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="mb-5">CRUD</h1>
+    <div class="container">
+      
+       
+
+        <input type="text" id="name" class="mb-3 form-control" placeholder="Name">
+            <input type="text" onkeyup="gettotal()" id="price" class="mb-3 "placeholder="Price">
+            <input type="text" onkeyup="gettotal()" name="" id="tax" placeholder="Taxes" class="mb-3 ">
+            <input type="text" onkeyup="gettotal()" name="" id="ads" placeholder="ads"  class="mb-3 ">
+            <input type=" text" onkeyup="gettotal()" name="" id="discount" placeholder="discount"  class="mb-3 ">
+            <small id="total" onmouseenter="gettotal()" class="total mb-3 ">Total:</small>
+  
+        <input type="text" id="category" class="mb-3 form-control" placeholder="category">
+        <input type="text" name="" id="count" class="mb-3 form-control" placeholder="Count">
+ 
+        <button class="create" id="create" onclick="addupdate()">Create</button>    
+
+      <input onkeyup="search()" type="text" placeholder="Search by name" class="form-control search" id="Search">
+    </div>
+    <div class="container">
+        <table class="table"> 
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Taxes</th>
+                    <th>Ads</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                    <th>Category</th>
+                    <th>Count</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                
+            </tbody>
+        </table>
+    </div>
+   
+<script src="js/script.js"></script>
+</body>
+</html>
